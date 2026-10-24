@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Detectives — Solve the Mystery of Intellectual Property!</title>
+  <meta name="description" content="An interactive educational game that teaches school students about Intellectual Property Rights — Patents, Trademarks, Copyrights, and Designs — through detective-themed cases and challenges.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- HOME SCREEN                                            -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-home" class="screen active">
+      <div class="home-bg">
+        <div class="city-skyline"></div>
+        <div class="stars-container" id="stars-home"></div>
+      </div>
+      <div class="home-content">
+        <div class="home-badge">🔍</div>
+        <h1 class="home-title">IP <span class="highlight">Detectives</span></h1>
+        <p class="home-subtitle">Solve the Mystery of Intellectual Property!</p>
+        <p class="home-tagline">Explore IP City • Crack Cases • Become an IP Master</p>
+        <div class="home-buttons">
+          <button id="btn-start" class="btn btn-primary btn-large" tabindex="1">
+            <span class="btn-icon">🚀</span> Start New Game
+          </button>
+          <button id="btn-continue" class="btn btn-secondary btn-large" tabindex="2" style="display:none;">
+            <span class="btn-icon">▶️</span> Continue
+          </button>
+          <button id="btn-leaderboard" class="btn btn-outline btn-large" tabindex="3">
+            <span class="btn-icon">🏆</span> Leaderboard
+          </button>
+          <button id="btn-teacher" class="btn btn-outline btn-large" tabindex="4">
+            <span class="btn-icon">👩‍🏫</span> Teacher View
+          </button>
+          <div class="home-bottom-row">
+            <button id="btn-settings" class="btn btn-icon-only" tabindex="5" title="Settings">
+              <span>⚙️</span>
+            </button>
+            <button id="btn-quit" class="btn btn-icon-only" tabindex="6" title="Quit">
+              <span>🚪</span>
+            </button>
+          </div>
+        </div>
+        <p class="home-credit">CIPAM • Ministry of Commerce &amp; Industry, India</p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- PLAYER SETUP                                           -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-player-setup" class="screen">
+      <div class="screen-inner">
+        <button class="btn-back" id="btn-back-setup" title="Back">← Back</button>
+        <h2 class="screen-title">🕵️ Choose Your Detective</h2>
+        <div class="setup-section">
+          <div id="existing-profiles" class="profiles-grid"></div>
+          <div class="new-profile-box">
+            <h3>Create New Profile</h3>
+            <div class="input-row">
+              <input type="text" id="input-name" class="text-input" placeholder="Enter your name..." maxlength="30" tabindex="1">
+              <button id="btn-create-profile" class="btn btn-primary" tabindex="2">
+                <span class="btn-icon">✨</span> Create
+              </button>
+            </div>
+            <p class="input-hint">Enter your name to start your IP Detective journey!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- PROGRESS MAP                                           -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-map" class="screen">
+      <div class="screen-inner">
+        <div class="map-header">
+          <button class="btn-back" id="btn-back-map" title="Back">← Back</button>
+          <div class="player-info" id="player-info"></div>
+        </div>
+        <h2 class="screen-title">🗺️ IP City</h2>
+        <div class="map-container" id="map-container"></div>
+        <div class="map-footer">
+          <button id="btn-final-quiz" class="btn btn-gold btn-large" style="display:none;">
+            <span class="btn-icon">🏆</span> Final Challenge!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- LEVEL / QUIZ                                           -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-level" class="screen">
+      <div class="screen-inner">
+        <div class="level-header">
+          <button class="btn-back" id="btn-back-level" title="Back">← Back</button>
+          <div class="level-progress" id="level-progress"></div>
+          <div class="level-score" id="level-score"></div>
+        </div>
+        <div class="level-content" id="level-content"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- TIDBIT ("Did You Know?")                               -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-tidbit" class="screen">
+      <div class="screen-inner center-content">
+        <div class="tidbit-card" id="tidbit-card">
+          <div class="tidbit-icon">💡</div>
+          <h2>Did You Know?</h2>
+          <p id="tidbit-text"></p>
+          <button id="btn-tidbit-continue" class="btn btn-primary btn-large">Continue →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RESULTS                                                -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-results" class="screen">
+      <div class="screen-inner center-content">
+        <div class="results-card" id="results-card">
+          <h2 id="results-title">Level Complete!</h2>
+          <div class="results-stars" id="results-stars"></div>
+          <div class="results-score" id="results-score-display"></div>
+          <div class="results-details" id="results-details"></div>
+          <div class="results-buttons">
+            <button id="btn-results-continue" class="btn btn-primary btn-large">Continue →</button>
+            <button id="btn-results-review" class="btn btn-outline">Review Answers</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- ANSWER REVIEW                                          -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-review" class="screen">
+      <div class="screen-inner">
+        <button class="btn-back" id="btn-back-review" title="Back">← Back</button>
+        <h2 class="screen-title">📋 Answer Review</h2>
+        <div class="review-list" id="review-list"></div>
+        <button id="btn-review-done" class="btn btn-primary btn-large" style="margin-top:1.5rem;">Back to Results</button>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- ZONE RECAP                                             -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-zone-recap" class="screen">
+      <div class="screen-inner center-content">
+        <div class="recap-card" id="recap-card">
+          <div class="recap-icon" id="recap-icon"></div>
+          <h2 id="recap-title"></h2>
+          <ul class="recap-points" id="recap-points"></ul>
+          <button id="btn-recap-continue" class="btn btn-primary btn-large">Continue →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- FINAL RESULTS / CERTIFICATE                            -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-final-results" class="screen">
+      <div class="screen-inner center-content">
+        <div class="final-card" id="final-card">
+          <h2>🎉 Congratulations!</h2>
+          <div id="final-results-content"></div>
+          <div class="final-buttons">
+            <button id="btn-view-certificate" class="btn btn-gold btn-large">
+              <span class="btn-icon">📜</span> View Certificate
+            </button>
+            <button id="btn-final-home" class="btn btn-outline btn-large">Back to Home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CERTIFICATE                                            -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-certificate" class="screen">
+      <div class="screen-inner center-content">
+        <div class="certificate-wrapper">
+          <div class="certificate" id="certificate"></div>
+          <div class="cert-buttons">
+            <button id="btn-print-cert" class="btn btn-primary btn-large">
+              <span class="btn-icon">🖨️</span> Print Certificate
+            </button>
+            <button id="btn-cert-back" class="btn btn-outline">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- LEADERBOARD                                            -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-leaderboard" class="screen">
+      <div class="screen-inner">
+        <button class="btn-back" id="btn-back-leaderboard" title="Back">← Back</button>
+        <h2 class="screen-title">🏆 Leaderboard</h2>
+        <div class="leaderboard-table" id="leaderboard-table"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- TEACHER VIEW                                           -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-teacher" class="screen">
+      <div class="screen-inner">
+        <button class="btn-back" id="btn-back-teacher" title="Back">← Back</button>
+        <h2 class="screen-title">👩‍🏫 Teacher Dashboard</h2>
+        <div id="teacher-content"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- SETTINGS                                               -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div id="screen-settings" class="screen">
+      <div class="screen-inner center-content">
+        <div class="settings-card">
+          <button class="btn-back" id="btn-back-settings" title="Back">← Back</button>
+          <h2 class="screen-title">⚙️ Settings</h2>
+          <div class="setting-row">
+            <label for="toggle-sound">🔊 Sound Effects</label>
+            <button id="toggle-sound" class="toggle-btn active" tabindex="1">ON</button>
+          </div>
+          <div class="setting-row">
+            <label>🗑️ Reset All Data</label>
+            <button id="btn-reset-data" class="btn btn-danger" tabindex="2">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load JS modules -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
