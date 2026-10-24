@@ -1,0 +1,56 @@
+{
+  "recaps": {
+    "patent": {
+      "title": "Patent Lab — Key Takeaways",
+      "emoji": "🔬",
+      "points": [
+        "A patent protects NEW INVENTIONS — new products or processes that solve a technical problem.",
+        "In India, a patent is valid for 20 years from the date of filing the application.",
+        "To be patentable, an invention must be Novel (new), involve an Inventive Step (non-obvious), and have Industrial Application (useful).",
+        "You cannot patent mathematical methods, scientific theories, plants/animals, or methods of agriculture in India.",
+        "Patents are granted by the Indian Patent Office (Controller General of Patents, Designs and Trade Marks).",
+        "A patent gives the inventor the exclusive right to make, use, sell or import the invention. Others need the inventor's permission (a licence)."
+      ],
+      "verify": "All points based on the Patents Act, 1970 (as amended) — Sections 2, 3, 48, 53. Source: ipindia.gov.in"
+    },
+    "trademark": {
+      "title": "Trademark Tower — Key Takeaways",
+      "emoji": "™️",
+      "points": [
+        "A trademark is a sign (word, logo, sound, colour, shape) that DISTINGUISHES the goods or services of one business from another.",
+        "A registered trademark in India is valid for 10 years and can be renewed indefinitely for further periods of 10 years each.",
+        "The ™ symbol means a mark is being used as a trademark (may not be registered). The ® symbol means it is officially REGISTERED.",
+        "Trademarks prevent consumer confusion — they help buyers know exactly whose product they are buying.",
+        "Using a fake or copied trademark (counterfeiting) is a criminal offence in India under the Trade Marks Act, 1999.",
+        "Well-known trademarks (like Tata, Amul) get extra protection even for goods and services they are not registered for."
+      ],
+      "verify": "All points based on the Trade Marks Act, 1999 — Sections 2, 25, 28, 29, 103. Source: ipindia.gov.in"
+    },
+    "copyright": {
+      "title": "Copyright Cinema — Key Takeaways",
+      "emoji": "©️",
+      "points": [
+        "Copyright protects ORIGINAL creative works — books, music, paintings, films, software, and more.",
+        "In India, copyright for literary, dramatic, musical and artistic works lasts for the author's LIFETIME plus 60 years.",
+        "Copyright protection is AUTOMATIC — you get it the moment you create an original work. Registration is optional but useful as evidence.",
+        "Fair dealing allows limited use of copyrighted works for education, research, criticism, news reporting, and personal/private use.",
+        "Piracy (copying and distributing copyrighted works without permission) is illegal and punishable under the Copyright Act, 1957.",
+        "The creator of a work has 'moral rights' — the right to be credited as the author and to prevent changes that harm their reputation."
+      ],
+      "verify": "All points based on the Copyright Act, 1957 (as amended 2012) — Sections 13, 14, 17, 22, 52, 57. Source: copyright.gov.in"
+    },
+    "design": {
+      "title": "Design Studio — Key Takeaways",
+      "emoji": "🎨",
+      "points": [
+        "A registered design protects the VISUAL APPEARANCE of a product — its shape, pattern, ornamentation, or composition of colours.",
+        "Design registration does NOT protect how a product works (that is a patent) or the brand name on it (that is a trademark).",
+        "In India, a registered design is initially valid for 10 years, and can be extended by 5 more years (total 15 years).",
+        "To be registrable, a design must be new, original, and not previously published or disclosed to the public.",
+        "Design registration is especially important for industries like textiles, furniture, jewellery, toys, electronics and automobiles.",
+        "The Designs Act, 2000 governs design registration in India. Applications are filed with the Patent Office (Designs Wing)."
+      ],
+      "verify": "All points based on the Designs Act, 2000 — Sections 2, 4, 5, 11. Source: ipindia.gov.in"
+    }
+  }
+}

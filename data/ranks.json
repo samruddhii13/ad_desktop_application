@@ -1,0 +1,32 @@
+{
+  "ranks": [
+    {
+      "id": "rookie",
+      "title": "Rookie",
+      "emoji": "🔰",
+      "minPoints": 0,
+      "description": "You are just getting started on your IP journey!"
+    },
+    {
+      "id": "junior",
+      "title": "Junior Detective",
+      "emoji": "🕵️",
+      "minPoints": 300,
+      "description": "You know the basics of Intellectual Property. Keep going!"
+    },
+    {
+      "id": "senior",
+      "title": "Senior Detective",
+      "emoji": "🏅",
+      "minPoints": 700,
+      "description": "You have a strong understanding of IP rights. Impressive!"
+    },
+    {
+      "id": "master",
+      "title": "IP Master",
+      "emoji": "🏆",
+      "minPoints": 1100,
+      "description": "You are a true IP expert! You can protect ideas like a pro."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "tidbits": [
+    {
+      "id": "pat_t1",
+      "zone": "patent",
+      "text": "India's first patent was granted in 1856 — for an invention related to the process of making 'punkah pulling machines' (a type of ceiling fan)!",
+      "verify": "History of Indian Patent Office – ipindia.gov.in. The first Indian Patent Act (Act VI of 1856) was modelled on the British Patent Law of 1852."
+    },
+    {
+      "id": "pat_t2",
+      "zone": "patent",
+      "text": "The Indian Patent Office has branches in Kolkata, Mumbai, Chennai and New Delhi. Any Indian citizen can file a patent application at any of these offices.",
+      "verify": "Indian Patent Office has four branches – ipindia.gov.in/patent-offices.htm"
+    },
+    {
+      "id": "pat_t3",
+      "zone": "patent",
+      "text": "In India you cannot patent a method of agriculture or horticulture. This ensures traditional farming practices remain freely available to all farmers.",
+      "verify": "Section 3(h) of the Patents Act, 1970 – Methods of agriculture or horticulture are not patentable."
+    },
+    {
+      "id": "tm_t1",
+      "zone": "trademark",
+      "text": "The oldest registered trademark still in use globally is the red triangle of Bass Brewery, registered in 1876. In India, the Trade Marks Registry was established in 1940 in Mumbai!",
+      "verify": "Trade Marks Registry history – ipindia.gov.in/trade-marks.htm. The Registry was established under the Trade Marks Act, 1940."
+    },
+    {
+      "id": "tm_t2",
+      "zone": "trademark",
+      "text": "A trademark can be a word, logo, sound, shape or even a colour combination! In India, the 'Yahoo!' yodel was one of the first sound marks to be discussed.",
+      "verify": "Section 2(1)(zb) of the Trade Marks Act, 1999 defines a 'mark' to include a device, brand, heading, label, ticket, name, signature, word, letter, numeral, shape of goods, packaging, or combination of colours."
+    },
+    {
+      "id": "tm_t3",
+      "zone": "trademark",
+      "text": "India has a special category of 'Well-Known Trademarks'. Brands like Tata, Reliance, and Amul are recognised as well-known marks, giving them extra protection across all goods and services.",
+      "verify": "Section 2(1)(zg) and Section 11(6)-(9) of the Trade Marks Act, 1999 provide for well-known trademarks."
+    },
+    {
+      "id": "cr_t1",
+      "zone": "copyright",
+      "text": "In India, copyright protection is automatic — you get it the moment you create an original work! Registration is optional but helps as evidence in court.",
+      "verify": "The Copyright Act, 1957 does not mandate registration for copyright protection to exist. Section 45 provides for voluntary registration."
+    },
+    {
+      "id": "cr_t2",
+      "zone": "copyright",
+      "text": "The Indian Copyright Act protects 'folk songs' and 'folklore' under special provisions to preserve India's rich cultural heritage.",
+      "verify": "Section 31A of the Copyright Act, 1957 provides compulsory licences for certain works including works of cultural importance."
+    },
+    {
+      "id": "cr_t3",
+      "zone": "copyright",
+      "text": "Singing a copyrighted song at a school function for educational purposes is generally allowed under 'fair dealing' in India — but selling recordings of it is not!",
+      "verify": "Section 52(1)(i) of the Copyright Act, 1957 allows performance of a literary, dramatic, or musical work by staff and students of an educational institution in the course of activities of the institution."
+    },
+    {
+      "id": "des_t1",
+      "zone": "design",
+      "text": "India is one of the world's largest producers of textiles, and many unique fabric patterns are registered as designs to protect the creativity of Indian weavers and artisans.",
+      "verify": "The Designs Act, 2000 protects the visual design of objects including textile designs. India has a rich tradition of GI-tagged and design-registered textiles."
+    },
+    {
+      "id": "des_t2",
+      "zone": "design",
+      "text": "A design registration protects only how a product LOOKS, not how it WORKS. If you want to protect how it works, you need a patent instead!",
+      "verify": "Section 2(d) of the Designs Act, 2000 – Design means features of shape, configuration, pattern, ornament or composition of lines or colours applied to any article, judged solely by the eye."
+    },
+    {
+      "id": "des_t3",
+      "zone": "design",
+      "text": "The Designs Act, 2000 replaced the older Designs Act of 1911. India modernised its design laws to keep up with global standards and to better protect creative industries.",
+      "verify": "The Designs Act, 2000 (Act 16 of 2000) came into force on 11 May 2001, replacing the Designs Act, 1911."
+    }
+  ]
+}
