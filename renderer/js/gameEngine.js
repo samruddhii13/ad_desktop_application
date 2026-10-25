@@ -114,9 +114,16 @@ export function hasProfiles() {
  * @param {string} name — the student's name (trimmed, non-empty)
  */
 export async function createProfile(name) {
+  const trimmed = (name || '').trim();
+  if (!trimmed) {
+    throw new Error('Profile name cannot be empty');
+  }
+  if (!_saveData || typeof _saveData.profiles !== 'object') {
+    _saveData = { profiles: {} };
+  }
   const id = 'p_' + Date.now();
   _saveData.profiles[id] = {
-    name,
+    name: trimmed,
     createdAt: new Date().toISOString(),
     ...freshProgress()
   };
