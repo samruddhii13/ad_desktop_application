@@ -4,7 +4,7 @@
   "description": "IP Detectives — An Interactive Game on Intellectual Property Awareness for School Students (CIPAM, Ministry of Commerce & Industry, India)",
   "author": "IP Detectives Team",
   "license": "MIT",
-  "main": "main.js",
+  "main": "main.js",  
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
@@ -15,6 +15,7 @@
   "build": {
     "appId": "com.cipam.ip-detectives",
     "productName": "IP Detectives",
+    "compression": "maximum",
     "directories": {
       "output": "dist"
     },
